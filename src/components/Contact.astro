@@ -1,0 +1,37 @@
+---
+import { site } from "../content/site";
+import ContactForm from "./vue/ContactForm.vue";
+---
+
+<section id="contacto" class="bg-white py-16">
+  <div class="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 md:grid-cols-2">
+    <div>
+      <h2 class="text-3xl font-extrabold tracking-tight text-[#7e6961]">Contacto</h2>
+      <p class="mt-3 text-neutral-700">
+        Contanos tu caso y te respondemos con próximos pasos.
+      </p>
+
+      <dl class="mt-6 space-y-3 text-sm">
+        <div>
+          <dt class="font-semibold text-[#7e6961]">Tel</dt>
+          <dd><a class="text-neutral-700 hover:underline" href={`tel:${site.phone}`}>{site.phone}</a></dd>
+        </div>
+        <div>
+          <dt class="font-semibold text-[#7e6961]">Email</dt>
+          <dd><a class="text-neutral-700 hover:underline" href={`mailto:${site.email}`}>{site.email}</a></dd>
+        </div>
+        <div>
+          <dt class="font-semibold text-[#7e6961]">Dirección</dt>
+          <dd class="text-neutral-700">{site.address.street}, {site.address.city}</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div class="rounded-3xl border border-[#7e6961] bg-white p-6 shadow-sm">
+      <ContactForm client:idle />
+      <p class="mt-3 text-xs text-slate-500">
+        Al enviar este formulario aceptás que te contactemos para coordinar una consulta.
+      </p>
+    </div>
+  </div>
+</section>

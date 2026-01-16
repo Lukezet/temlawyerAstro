@@ -1,0 +1,83 @@
+---
+import { site } from "../content/site";
+---
+
+<section id="sobre" class="bg-white py-16">
+  <div class="mx-auto max-w-6xl px-4">
+    <div class="grid grid-cols-1 gap-10 md:grid-cols-2 md:items-center">
+      <div>
+        <p class="text-xs font-semibold tracking-[0.2em] text-[#7e6961] uppercase">Sobre el estudio</p>
+        <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-slate-900">
+          Enfoque estratégico con trato humano.
+        </h2>
+
+        <p class="mt-4 text-slate-600 leading-relaxed">
+          Acompañamos a personas y empresas con una visión práctica: prevenir conflictos cuando es posible y litigar con
+          criterio cuando es necesario. Priorizamos la claridad, los tiempos reales y una comunicación transparente.
+        </p>
+
+        <dl class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <div class="rounded-3xl border border-slate-200 p-5">
+            <dt class="text-sm font-semibold text-slate-900">Estrategia</dt>
+            <dd class="mt-1 text-sm text-slate-600">Análisis del caso, riesgos y plan de acción.</dd>
+          </div>
+          <div class="rounded-3xl border border-slate-200 p-5">
+            <dt class="text-sm font-semibold text-slate-900">Acompañamiento</dt>
+            <dd class="mt-1 text-sm text-slate-600">Seguimiento y decisiones informadas.</dd>
+          </div>
+          <div class="rounded-3xl border border-slate-200 p-5">
+            <dt class="text-sm font-semibold text-slate-900">Negociación</dt>
+            <dd class="mt-1 text-sm text-slate-600">Acuerdos sólidos, cuando conviene.</dd>
+          </div>
+          <div class="rounded-3xl border border-slate-200 p-5">
+            <dt class="text-sm font-semibold text-slate-900">Litigio</dt>
+            <dd class="mt-1 text-sm text-slate-600">Representación firme, con fundamentos.</dd>
+          </div>
+        </dl>
+
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a
+            href="#contacto"
+            class="inline-flex items-center justify-center rounded-full bg-rose-950 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-rose-900 focus:outline-none focus:ring-2 focus:ring-rose-950/30"
+          >
+            Coordinar consulta
+          </a>
+          <a
+            href="#equipo"
+            class="inline-flex items-center justify-center rounded-full border border-slate-200 px-5 py-3 text-sm font-semibold text-slate-900 hover:bg-slate-50"
+          >
+            Conocer al equipo
+          </a>
+        </div>
+      </div>
+
+      <aside class="rounded-3xl border border-slate-200 bg-[#cbc0b2] p-6 shadow-sm">
+        <h3 class="text-lg font-bold text-slate-900">Información rápida</h3>
+
+        <div class="mt-5 space-y-4 text-sm">
+          <div class="flex items-start justify-between gap-4 rounded-2xl bg-white p-4 border border-slate-200">
+            <span class="font-semibold text-slate-900">Atención</span>
+            <span class="text-slate-600 text-right">Presencial y online</span>
+          </div>
+
+          <div class="flex items-start justify-between gap-4 rounded-2xl bg-white p-4 border border-slate-200">
+            <span class="font-semibold text-slate-900">Ubicación</span>
+            <span class="text-slate-600 text-right">{site.address.city}</span>
+          </div>
+
+          <div class="flex items-start justify-between gap-4 rounded-2xl bg-white p-4 border border-slate-200">
+            <span class="font-semibold text-slate-900">Respuesta</span>
+            <span class="text-slate-600 text-right">En 24–48 hs hábiles</span>
+          </div>
+
+          <div class="rounded-2xl bg-rose-950 p-4 text-white">
+            <p class="text-sm font-semibold">Primera consulta</p>
+            <p class="mt-1 text-xs text-white/85">
+              Te indicamos alternativas, pasos, documentación y una estimación realista de tiempos.
+            </p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
